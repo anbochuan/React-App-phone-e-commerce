@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 // class based component
 export default class Product extends Component {
     render() {
-        const {id, title, img, price, inCart} = this.props.product;
+        const {id, title, img, price, inCart} = this.props.eachProductValue;
         return (
             <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
                 <div className="card">
@@ -33,7 +33,7 @@ export default class Product extends Component {
 }
 
 Product.protoTypes = {
-    product: PropTypes.shape({
+    eachProductValue: PropTypes.shape({
         id:PropTypes.number,
         img:PropTypes.string,
         title:PropTypes.string,

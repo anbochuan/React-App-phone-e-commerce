@@ -6,7 +6,7 @@ import {ProductConsumer} from "../context";
 // class based component
 export default class ProductList extends Component {
     eachProduct = (product) => {
-        return <Product key={product.id} product={product} />;
+        return <Product key={product.id} eachProductValue={product} />;
     }
 
     render() {
