@@ -14,7 +14,10 @@ class ProductProvider extends Component {
         cart: [],
         modalOpen: false,
         modalProduct: detailProduct,
-    }
+        cartSubTotal: 0,
+        cartTax: 0,
+        cartTotal: 0
+    };
 
     // get the copy of the data, instead of the reference
     componentDidMount() {
@@ -74,6 +77,22 @@ class ProductProvider extends Component {
         });
     };
 
+    increment(id) {
+        console.log("this is increment method.");
+    };
+
+    decrement(id) {
+        console.log("this is decrement method.");
+    };
+
+    removeItem(id) {
+        console.log("this is remove item method.");
+    };
+
+    clearCart = function() {
+        console.log("this is clear cart method.");
+    };
+
     render() {
         return (
             // this object is sitting on top of the entire project
@@ -84,7 +103,11 @@ class ProductProvider extends Component {
                 handleDetail: this.handleDetail,
                 addToCart: this.addToCart,
                 openModal: this.openModal,
-                closeModal: this.closeModal
+                closeModal: this.closeModal,
+                increment: this.increment,
+                decrement: this.decrement,
+                removeItem: this.removeItem,
+                clearCart: this.clearCart
             }}>
                 {/* and this.props.children will let all the child node use the value of this object */}
                 {this.props.children}
