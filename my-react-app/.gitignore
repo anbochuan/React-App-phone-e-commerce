@@ -1,6 +1,9 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-package-lock.json
+# package-lock.json
+
+# env
+.env
 
 # dependencies
 /node_modules
@@ -11,7 +14,7 @@ package-lock.json
 # production
 /build
 
-# misc
+# miscnpm
 .DS_Store
 .env
 npm-debug.log*

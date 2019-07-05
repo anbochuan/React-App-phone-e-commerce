@@ -6,6 +6,7 @@
     "bootstrap": "^4.3.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.0.1",
     "react-scripts": "0.9.5",
     "styled-components": "^4.3.2"
@@ -16,5 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
